@@ -9,15 +9,16 @@ var stage, label, shape, oldX, oldY, size, color, mousestart;
 		function init() {
 			stage = new createjs.Stage("imageView");
 			stage.enableDOMEvents(true);
-			label = new createjs.Text("finger paint", "24px Arial");
-			label.x = label.y = 10;
+            stage.color = "#FFF8F0";
+//			label = new createjs.Text("finger paint", "24px Arial");
+//			label.x = label.y = 10;
 			
 			shape = new createjs.Shape();
 			stage.addChild(shape, label);
 			
 			// set up our defaults:
 			color = "#0FF";
-			size = 10;
+			size = 3;
 			
 			// add handler for stage mouse events:
 			stage.on("stagemousedown", function(event) {
