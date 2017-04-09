@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+      <meta charset="utf-8">
     <meta charset="UTF-8">
-    <title>Csce655 project by orion2166</title>
+    <title>KID Cursive: Cursive Language Teaching Website</title>
+      <link rel="stylesheet" type="text/css" href="http://www.dreamtemplate.com/dreamcodes/social_icons/tsc_social_icons.css">
+      <link rel="stylesheet" type="text/css" href="http://www.dreamtemplate.com/dreamcodes/text_buttons/css/tsc_text_buttons.css">
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
 <!--    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">-->
 <!--    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>-->
@@ -12,20 +15,46 @@
       <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
   </head>
     <body style="background-color:rgb(255, 255, 224)" onload="init();">
+<!--        topbar-->
         <div id="menu_group" style="background-color:rgb(102, 51, 0)">
+            <div id="arrows_location"> <a class="tsc_button3 ico-arrow_r" href="#"><span class="icon"></span>NEXT TASK</a> </div>
+            <div id="arrows_location"> <a class="tsc_button3 ico-arrow_l" href="#"><span class="icon"></span>PREVIOUS TASK</a>  </div>
+            
         </div>
         <div id="vertical_lining">
-            <div id="instructions_view">
-                
-            </div>
                 <canvas id="imageView">
                     <p>Unfortunately, your browser is currently unsupported by our web application. We are sorry for the inconvenience. Please use one of the supported browsers listed below, or draw the image you want using an offline tool.</p>
                     <p>Supported browsers: <a href="https://www.opera.com">Opera</a>, <a href="http://www.mozilla.com">Firefox</a>, <a href="http://www.apple.com/safari">Safari</a>, and <a href="http://www.konqueror.org">Konqueror</a>.</p>
                 </canvas>
+<!--            left-->
             <div id="instructions_view">
-                
+                <img src="wrongname.gif" alt="HTML5 Icon" id="images_view">
+                <p style="border-top: inset green 8px;" ><strong><font size="6" color="black">CURRENT DRAWING</font></strong></p>
+                <img src="wrongname.gif" alt="HTML5 Icon" id="images_view">
+                <p style="border-top: inset green 8px;" ><strong><font size="6" color="black">Previous work</font></strong></p>
+                <table class="previous_worktables">
+                    <tr class="previous_worktables">
+                        <th class="previous_worktables">
+                            <canvas class="previous_worktables">
+                            </canvas>
+                        </th>
+                        <th class="previous_worktables">
+                            <canvas class="previous_worktables">
+                            </canvas>
+                        </th>
+                        <th class="previous_worktables">
+                            <canvas class="previous_worktables">
+                            </canvas>
+                        </th>
+                        <th class="previous_worktables">
+                            <canvas class="previous_worktables">
+                            </canvas>
+                        </th>
+                    </tr>
+                    
+                    
+                </table>                
             </div>
         </div>
-        
     </body>
 </html>
